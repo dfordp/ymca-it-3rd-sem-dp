@@ -227,3 +227,14 @@ while(n<=b):
     if(n%2!=0):
         print(n)
     n=n+1
+
+#WAP read an integer number and print its reverse
+n=int(input("Enter value of N: "))
+rev = 0
+
+while(n > 0):
+    a = n % 10
+    rev = rev * 10 + a
+    n = n // 10
+
+print(rev)

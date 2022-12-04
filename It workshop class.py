@@ -187,3 +187,34 @@ while(a<=7 and b<=8):
     a=a+1
     b=b+1
 print(sum)
+
+#Day after input date
+Days_in_a_month=[31,28,31,30,31,30,31,31,30,31,30,31]
+
+def isleap(year):
+    if(year%400==0 or (year%4==0 and year%100!=0)):
+        Days_in_a_month[1]=29
+
+day=int(input("Enter day"))
+month=int(input("Enter month"))
+year=int(input("Enter year"))
+
+nd=day
+nm=month
+ny=year
+
+if(nd==31 and nm==12):
+    nd=1
+    nm=1
+    ny=ny+1
+elif(nd==1):
+    nm-=1
+    if(nm==2):
+        isleap(ny)
+    nd=Days_in_a_month[nm-1]
+else:
+    nd=nd+1
+print(nd,"/",nm,"/",ny)
+
+
+

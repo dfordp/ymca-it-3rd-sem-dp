@@ -77,7 +77,7 @@ else:
 print(nd,"/",nm,"/",ny)
 
 #WAP to print the sum of the series 
-
+#18+27+36+45+54+63+72+81
 sum=0
 l=1
 h=8

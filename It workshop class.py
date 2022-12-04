@@ -217,4 +217,13 @@ else:
 print(nd,"/",nm,"/",ny)
 
 
-
+#WAP TO TO READ TWO POSTIVE NO. AND PRINT ALL ODD No. BETWEEN THEM
+a=int(input("Enter value of starting point"))
+b=int(input("Enter value of starting point"))
+if(a<0 or b<0):
+    print("Invalid Input")
+n=a+1
+while(n<=b):
+    if(n%2!=0):
+        print(n)
+    n=n+1

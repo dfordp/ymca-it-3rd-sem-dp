@@ -177,3 +177,13 @@ b = 15
 print(f"GCD of {a} and {b} is {gcd(a, b)}")
 
 
+# Write a program to read print the sum of the series
+# 12+23+34+45+……………………+78
+sum=0
+a=1
+b=2
+while(a<=7 and b<=8):
+    sum=sum+a**b
+    a=a+1
+    b=b+1
+print(sum)
